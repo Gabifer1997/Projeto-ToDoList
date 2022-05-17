@@ -1,34 +1,40 @@
-Projeto | ToDoList
-Resumo do Projeto:
-Consiste na criação de uma aplicação para gerenciar uma lista de tarefas • Cadastrar • Buscar • Atualizar • Excluir.
+# Projeto ToDoList
+## Resumo
 
-Com ela, criei uma API REST (Swagger) utilizando C# e .NET 6 com Dapper, também utilizei Microsoft SQL Server como Banco de Dados.
+O projeto consiste na criação de de uma Rest API utilizando C#, para gerenciamento de uma lista, tendo como funções: adicionar, atualizar, excluir e listar tarefas desta lista.
 
-     
-A WEB API vai expor endpoints que permitem consultar e realizar as operações para visualizar, incluir, alterar e excluir informações da Tarefas.
+## Material utilizado
 
-OS ENDPOINTS SÃO:
+Para realização deste projeto foi necessário algumas ferramentas:
 
-/api/Tarefas/GetTarefas: Puxa todas as Tarefas cadastradas em ordem ASC;
-/api/Tarefas/Tarefa/{id}: Puxa um ID relacionada a tal Tarefa;
-/api/Tarefas/GetTodosAndCount: Puxa Todas as Tarefas até mesmo as deletadas.
-/api/Tarefas/Save: Salva/Cadastra uma Tarefa;
-/api/Tarefas/UpadteTodosStatus: Atualiza o Status de uma Tarefa.
-/api/Tarefas/Delete: Deleta uma Tarefa, mas deixa ela como "ausente", podendo assim filtrar ela para determinada consulta.
-🔨 Sua funcionalidade:
-Cadastro de Tarefa: É possível cadastrar quantas tarefas você desejar, junto de uma data no qual ela deve ser concluída
+ 1. Linguagem C#
+ 2. Visual Studio 2022
+ 3. Microsoft SQL Server
+ 4. .NET
 
-Buscar e fazer atualizações de Tarefa: Podemos filtrar e atualizar as Tarefas, podendo atualizá-las se a mesma ja foi conclúida.
+## Os Endpoint desenvolvidos na API
 
-Exclusão: Ela deixa a tarefa como "Ausente" mas não exclui, isso para pertmir que a tal Tarefa possa ser filtrada futuramente caso tenha sido concluída ou não.
+ - `/teste/Tarefas/tarefas`
+ - `/teste/Tarefas/tarefasId`
+ - `/teste/Tarefas/tarefasNaoConcluidas`
+ - `/teste/Tarefas/tarefasConcluidas`
+ - `/teste/Tarefas/tarefasApagadas`
+ - `/teste/Tarefas/criarTarefa`
+ - `/teste/Tarefas/atualizarTarefa`
+ - `/teste/Tarefas/apagarTarefa`
 
-Lista Ordenada: Ordena as Tarefas por Ordem ASC
+## Funcionamento da API
 
-📁 Acesso ao Projeto:
-Baixe o arquivo .zip ou abra diretamente na IDE Visual Studio.
+ 1. Listar todas as tarefas
+ 2. Listar tarefa por Id
+ 3. Listar todas as tarefas não concluidas
+ 4. Listar todas as tarefas concluidas
+ 5. Listar todas as tarefas apagadas
+ 6. Criar ou adicionar nova tarefa
+ 7. Atualizar tarefa para concluida
+ 8. Apagar tarefa
 
-🛠️ Abrir e rodar o projeto:
-Configurar Banco de Dados: Configure o Banco de Dados SQL ou Qualquer outro banco de sua preferência em appsettings.json.
-Basta compilar o código uma vez, para que todas as dependências sejam instaladas corretamente.
+## Como utilizar o projeto
 
-Após isso, abra seu SGBD e crie seu Banco de Dados com base na API.
+ - `Criar e configurar uma base dados`: Utilizar um banco de dados de sua preferencia em appsettings.json.
+ - `Compilar o projeto`: Compilar o projeto para que suas dependências sejam instaladas.
